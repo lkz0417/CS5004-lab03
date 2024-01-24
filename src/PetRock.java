@@ -17,6 +17,10 @@ public class PetRock {
     return name;
   }
 
+  /**
+   * Use two Doubles to test assertSame
+   * @return
+   */
   public Double getNum1() {
     return num1;
   }
@@ -37,6 +41,9 @@ public class PetRock {
     happy=false;
   }
 
+  /**
+   * Test IllegalStateException
+   */
   public String getHappyMessage(){
     if(!happy){
       throw new IllegalStateException();
@@ -44,6 +51,10 @@ public class PetRock {
     return "I'm happy!";
   }
 
+  /**
+   * Test RuntimeException
+   * @return
+   */
   public String getUnHappyMessage(){
     if(happy){
       throw new RuntimeException();
@@ -51,16 +62,27 @@ public class PetRock {
     return "I'm unhappy";
   }
 
+  /**
+   * Test number
+   * @return
+   */
   public int getFavNumer(){
     return 42;
   }
 
+  /**
+   * Test timeout
+   */
   public void waitTillHappy(){
     while(!happy){
 
     }
   }
 
+  /**
+   * Test toString
+   * @return
+   */
   @Override
   public String toString() {
     return "PetRock{" +
